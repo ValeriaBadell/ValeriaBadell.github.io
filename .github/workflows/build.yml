@@ -25,3 +25,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Upload out folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-build
+          path: out
